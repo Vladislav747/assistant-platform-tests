@@ -20,7 +20,7 @@ describe('Scenario Tests', () => {
         cy.contains(testScenarioName).should('be.visible');
     });
 
-    it("should archive new Test Scenario", () => {
+    it('should archive "Test Scenario"', () => {
         cy.visit('/scenarios');
         cy.wait(2000);
         cy.contains(testScenarioName).should('be.visible');
@@ -37,6 +37,7 @@ describe('Scenario Tests', () => {
 
     it("should show scroll button", () => {
         cy.visit('/scenarios');
+        cy.wait(2000);
         cy.scrollTo(0, 500)
         cy.getByTestId("scrollToTopBtn").should('be.visible');
     });
