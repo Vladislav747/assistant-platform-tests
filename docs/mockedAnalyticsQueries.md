@@ -2,7 +2,531 @@ https://assistant-backend-dev.is74.ru/projects/1/scenarios_starts?start_block_ty
 
 response
 
-```javascript
+```
+
+[   
+ {
+        "scenario_name": "Тест потокового распознавания",
+        "scenario_id": 563,
+        "start_block_name": "Начало сценария",
+        "start_block_id": 31589,
+        "block_info": {
+            "block": {
+                "name": "Начало сценария",
+                "block_type_id": 4,
+                "scenario_id": 563,
+                "pass_result": false,
+                "hold_user": false,
+                "check_interruption": false,
+                "id": 31589
+            },
+            "block_data": {
+                "variables": null,
+                "redirects": [],
+                "type": "start",
+                "add_data": null,
+                "id": 1729
+            },
+            "block_options": null,
+            "block_view": {
+                "x": -3.0,
+                "y": -6.0
+            },
+            "in_port": {
+                "id": 73220,
+                "context": null
+            },
+            "out_ports": [
+                {
+                    "id": 73221,
+                    "context": null
+                }
+            ],
+            "block_goal": null
+        }
+    },
+    {
+        "scenario_name": "Экспорт чата",
+        "scenario_id": 564,
+        "start_block_name": "Начало сценария",
+        "start_block_id": 31594,
+        "block_info": {
+            "block": {
+                "name": "Начало сценария",
+                "block_type_id": 4,
+                "scenario_id": 564,
+                "pass_result": false,
+                "hold_user": false,
+                "check_interruption": false,
+                "id": 31594
+            },
+            "block_data": {
+                "variables": null,
+                "redirects": [],
+                "type": "start",
+                "add_data": null,
+                "id": 1730
+            },
+            "block_options": null,
+            "block_view": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "in_port": {
+                "id": 73230,
+                "context": null
+            },
+            "out_ports": [
+                {
+                    "id": 73231,
+                    "context": null
+                }
+            ],
+            "block_goal": null
+        }
+    },
+    {
+        "scenario_name": "test archive3",
+        "scenario_id": 577,
+        "start_block_name": "Начало сценария",
+        "start_block_id": 31715,
+        "block_info": {
+            "block": {
+                "name": "Начало сценария",
+                "block_type_id": 4,
+                "scenario_id": 577,
+                "pass_result": false,
+                "hold_user": false,
+                "check_interruption": false,
+                "id": 31715
+            },
+            "block_data": {
+                "variables": null,
+                "redirects": [],
+                "type": "start",
+                "add_data": null,
+                "id": 1762
+            },
+            "block_options": null,
+            "block_view": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "in_port": {
+                "id": 73484,
+                "context": null
+            },
+            "out_ports": [
+                {
+                    "id": 73485,
+                    "context": null
+                }
+            ],
+            "block_goal": null
+        }
+    },
+    {
+        "scenario_name": "test archive5",
+        "scenario_id": 583,
+        "start_block_name": "Начало сценария №32670",
+        "start_block_id": 32670,
+        "block_info": {
+            "block": {
+                "name": "Начало сценария №32670",
+                "block_type_id": 4,
+                "scenario_id": 583,
+                "pass_result": false,
+                "hold_user": false,
+                "check_interruption": false,
+                "id": 32670
+            },
+            "block_data": {
+                "variables": null,
+                "redirects": [],
+                "type": "start",
+                "add_data": null,
+                "id": 1947
+            },
+            "block_options": null,
+            "block_view": {
+                "x": -555.4573832662268,
+                "y": 1379.923874314129
+            },
+            "in_port": {
+                "id": 75785,
+                "context": null
+            },
+            "out_ports": [
+                {
+                    "id": 75786,
+                    "context": null
+                }
+            ],
+            "block_goal": null
+        }
+    },
+    {
+        "scenario_name": "test archive5",
+        "scenario_id": 583,
+        "start_block_name": "Начало сценария",
+        "start_block_id": 31759,
+        "block_info": {
+            "block": {
+                "name": "Начало сценария",
+                "block_type_id": 4,
+                "scenario_id": 583,
+                "pass_result": false,
+                "hold_user": false,
+                "check_interruption": false,
+                "id": 31759
+            },
+            "block_data": {
+                "variables": null,
+                "redirects": [],
+                "type": "start",
+                "add_data": null,
+                "id": 1768
+            },
+            "block_options": null,
+            "block_view": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "in_port": {
+                "id": 73588,
+                "context": null
+            },
+            "out_ports": [
+                {
+                    "id": 73589,
+                    "context": null
+                }
+            ],
+            "block_goal": null
+        }
+    },
+    {
+        "scenario_name": "test archive5",
+        "scenario_id": 583,
+        "start_block_name": "1",
+        "start_block_id": 32400,
+        "block_info": {
+            "block": {
+                "name": "1",
+                "block_type_id": 4,
+                "scenario_id": 583,
+                "pass_result": false,
+                "hold_user": false,
+                "check_interruption": false,
+                "id": 32400
+            },
+            "block_data": {
+                "variables": null,
+                "redirects": [],
+                "type": "start",
+                "add_data": {
+                    "Параметр 0": 15881
+                },
+                "id": 1885
+            },
+            "block_options": null,
+            "block_view": {
+                "x": 281.62516500471565,
+                "y": 480.3671973794834
+            },
+            "in_port": {
+                "id": 75130,
+                "context": null
+            },
+            "out_ports": [
+                {
+                    "id": 75131,
+                    "context": null
+                }
+            ],
+            "block_goal": null
+        }
+    },
+    {
+        "scenario_name": "test archive6",
+        "scenario_id": 586,
+        "start_block_name": "Начало сценария №32383",
+        "start_block_id": 32383,
+        "block_info": {
+            "block": {
+                "name": "Начало сценария №32383",
+                "block_type_id": 4,
+                "scenario_id": 586,
+                "pass_result": false,
+                "hold_user": false,
+                "check_interruption": false,
+                "id": 32383
+            },
+            "block_data": {
+                "variables": null,
+                "redirects": [],
+                "type": "start",
+                "add_data": null,
+                "id": 1883
+            },
+            "block_options": null,
+            "block_view": {
+                "x": 1012.0000000000002,
+                "y": -18.80769230769238
+            },
+            "in_port": {
+                "id": 75081,
+                "context": null
+            },
+            "out_ports": [
+                {
+                    "id": 75082,
+                    "context": null
+                }
+            ],
+            "block_goal": null
+        }
+    },
+    {
+        "scenario_name": "test archive6",
+        "scenario_id": 586,
+        "start_block_name": "Начало сценария",
+        "start_block_id": 31767,
+        "block_info": {
+            "block": {
+                "name": "Начало сценария",
+                "block_type_id": 4,
+                "scenario_id": 586,
+                "pass_result": false,
+                "hold_user": false,
+                "check_interruption": false,
+                "id": 31767
+            },
+            "block_data": {
+                "variables": null,
+                "redirects": [],
+                "type": "start",
+                "add_data": null,
+                "id": 1771
+            },
+            "block_options": null,
+            "block_view": {
+                "x": 277.7747814084136,
+                "y": 315.7542842256437
+            },
+            "in_port": {
+                "id": 73604,
+                "context": null
+            },
+            "out_ports": [
+                {
+                    "id": 73605,
+                    "context": null
+                }
+            ],
+            "block_goal": null
+        }
+    },
+    {
+        "scenario_name": "test archive78",
+        "scenario_id": 598,
+        "start_block_name": "Начало сценария",
+        "start_block_id": 31881,
+        "block_info": {
+            "block": {
+                "name": "Начало сценария",
+                "block_type_id": 4,
+                "scenario_id": 598,
+                "pass_result": false,
+                "hold_user": false,
+                "check_interruption": false,
+                "id": 31881
+            },
+            "block_data": {
+                "variables": null,
+                "redirects": [],
+                "type": "start",
+                "add_data": null,
+                "id": 1796
+            },
+            "block_options": null,
+            "block_view": {
+                "x": 1.0,
+                "y": 0.0
+            },
+            "in_port": {
+                "id": 73892,
+                "context": null
+            },
+            "out_ports": [
+                {
+                    "id": 73893,
+                    "context": null
+                }
+            ],
+            "block_goal": null
+        }
+    },
+    {
+        "scenario_name": "test scenarioList2",
+        "scenario_id": 600,
+        "start_block_name": "Начало сценария",
+        "start_block_id": 31883,
+        "block_info": {
+            "block": {
+                "name": "Начало сценария",
+                "block_type_id": 4,
+                "scenario_id": 600,
+                "pass_result": false,
+                "hold_user": false,
+                "check_interruption": false,
+                "id": 31883
+            },
+            "block_data": {
+                "variables": null,
+                "redirects": [],
+                "type": "start",
+                "add_data": null,
+                "id": 1798
+            },
+            "block_options": null,
+            "block_view": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "in_port": {
+                "id": 73896,
+                "context": null
+            },
+            "out_ports": [
+                {
+                    "id": 73897,
+                    "context": null
+                }
+            ],
+            "block_goal": null
+        }
+    },
+    {
+        "scenario_name": "Подтверждение",
+        "scenario_id": 627,
+        "start_block_name": "Начало сценария",
+        "start_block_id": 32119,
+        "block_info": {
+            "block": {
+                "name": "Начало сценария",
+                "block_type_id": 4,
+                "scenario_id": 627,
+                "pass_result": false,
+                "hold_user": false,
+                "check_interruption": false,
+                "id": 32119
+            },
+            "block_data": {
+                "variables": null,
+                "redirects": [],
+                "type": "start",
+                "add_data": null,
+                "id": 1845
+            },
+            "block_options": null,
+            "block_view": {
+                "x": 97.27922061357859,
+                "y": -33.30330085889909
+            },
+            "in_port": {
+                "id": 74466,
+                "context": null
+            },
+            "out_ports": [
+                {
+                    "id": 74467,
+                    "context": null
+                }
+            ],
+            "block_goal": null
+        }
+    },
+    {
+        "scenario_name": "Анкетирование",
+        "scenario_id": 641,
+        "start_block_name": "Начало сценария",
+        "start_block_id": 32282,
+        "block_info": {
+            "block": {
+                "name": "Начало сценария",
+                "block_type_id": 4,
+                "scenario_id": 641,
+                "pass_result": false,
+                "hold_user": false,
+                "check_interruption": false,
+                "id": 32282
+            },
+            "block_data": {
+                "variables": null,
+                "redirects": [],
+                "type": "start",
+                "add_data": null,
+                "id": 1872
+            },
+            "block_options": null,
+            "block_view": {
+                "x": -2.5,
+                "y": -17.500000000000004
+            },
+            "in_port": {
+                "id": 74842,
+                "context": null
+            },
+            "out_ports": [
+                {
+                    "id": 74843,
+                    "context": null
+                }
+            ],
+            "block_goal": null
+        }
+    },
+    {
+        "scenario_name": "Порты блоков",
+        "scenario_id": 645,
+        "start_block_name": "Начало сценария №32495",
+        "start_block_id": 32495,
+        "block_info": {
+            "block": {
+                "name": "Начало сценария №32495",
+                "block_type_id": 4,
+                "scenario_id": 645,
+                "pass_result": false,
+                "hold_user": false,
+                "check_interruption": false,
+                "id": 32495
+            },
+            "block_data": {
+                "variables": null,
+                "redirects": [],
+                "type": "start",
+                "add_data": null,
+                "id": 1912
+            },
+            "block_options": null,
+            "block_view": {
+                "x": 711.3846153846154,
+                "y": 21.84615384615381
+            },
+            "in_port": {
+                "id": 75350,
+                "context": null
+            },
+            "out_ports": [
+                {
+                    "id": 75351,
+                    "context": null
+                }
+            ],
+            "block_goal": null
+        }
+    }]
 
 
 ```
