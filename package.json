@@ -14,9 +14,6 @@
         "prettier": "npx prettier --write **/*.{ts,tsx,json}",
         "lint:ts": "eslint \"**/*.{ts,tsx}\"",
         "lint:ts:fix": "eslint \"**/*.{ts,tsx}\" --fix",
-        "lint:scss": "npx stylelint \"**/*.scss\"",
-        "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
-        "test:unit": "jest --config ./config/jest/jest.config.ts",
         "test:e2e": "cypress open",
         "test:ui": "npx loki test",
         "test:ui:ok": "npx loki approve",
@@ -28,7 +25,6 @@
         "storybook:build": "build-storybook -c ./config/storybook",
         "prepare": "husky install",
         "generate:slice": "node ./scripts/createSlice/index.js",
-        "postinstall": "node ./scripts/clear-cache.js"
     },
     "lint-staged": {
         "**/*.{ts,tsx}": [

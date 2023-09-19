@@ -1,0 +1,327 @@
+[
+  {
+    "id": 1,
+    "name": "Отправить запрос в базу",
+    "table_name": "db_blocks",
+    "scenario_type": "both",
+    "multiple_add_data": false,
+    "add_data": [
+      {
+        "type": "select_box_param",
+        "param_var": "query_id",
+        "param_name": "query_id",
+        "readable_name": "SQL-запрос"
+      }
+    ],
+    "options": []
+  },
+  {
+    "id": 2,
+    "name": "Озвучить текст",
+    "table_name": "text_blocks",
+    "scenario_type": "both",
+    "multiple_add_data": true,
+    "add_data": [
+      {
+        "type": "text",
+        "param_name": "text",
+        "readable_name": "Текст"
+      }
+    ],
+    "options": []
+  },
+  {
+    "id": 3,
+    "name": "Регулярки",
+    "table_name": "regex_blocks",
+    "scenario_type": "both",
+    "multiple_add_data": false,
+    "add_data": [
+      {
+        "type": "bool",
+        "param_name": "use_counter",
+        "readable_name": "Ограничить максимальное количество повторов"
+      },
+      {
+        "type": "number",
+        "param_name": "counter",
+        "readable_name": "Количество повторов"
+      }
+    ],
+    "options": [
+      {
+        "type": "text",
+        "param_name": "name",
+        "readable_name": "Название"
+      },
+      {
+        "type": "text",
+        "param_name": "option",
+        "readable_name": "Регулярка"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Начать сценарий",
+    "table_name": "start_blocks",
+    "scenario_type": "both",
+    "multiple_add_data": false,
+    "add_data": [
+      {
+        "type": "select_box_enum",
+        "param_name": "type",
+        "enum_options": [
+          {
+            "option": "start",
+            "readable_name": "Начало сценария"
+          },
+          {
+            "option": "end",
+            "readable_name": "Завершающий сценарий"
+          }
+        ],
+        "readable_name": "Тип стартового блока"
+      },
+      {
+        "type": "dict",
+        "param_name": "add_data",
+        "readable_name": "Дополнительные параметры"
+      }
+    ],
+    "options": []
+  },
+  {
+    "id": 5,
+    "name": "Сравнить переменные",
+    "table_name": "condition_blocks",
+    "scenario_type": "both",
+    "multiple_add_data": false,
+    "add_data": [
+      {
+        "type": "select_box_param",
+        "param_var": "variables",
+        "param_name": "var_left_id",
+        "readable_name": "Переменная 1"
+      },
+      {
+        "type": "select_box_enum",
+        "param_name": "condition_type",
+        "enum_options": [
+          {
+            "option": "more",
+            "readable_name": ">"
+          },
+          {
+            "option": "more_equal",
+            "readable_name": ">="
+          },
+          {
+            "option": "less",
+            "readable_name": "<"
+          },
+          {
+            "option": "less_equal",
+            "readable_name": "<="
+          },
+          {
+            "option": "equal",
+            "readable_name": "="
+          },
+          {
+            "option": "not_equal",
+            "readable_name": "!="
+          }
+        ],
+        "readable_name": "Оператор"
+      },
+      {
+        "type": "select_box_param",
+        "param_var": "variables",
+        "param_name": "var_right_id",
+        "readable_name": "Переменная 2"
+      }
+    ],
+    "options": []
+  },
+  {
+    "id": 6,
+    "name": "Завершить сценарий",
+    "table_name": "end_call_blocks",
+    "scenario_type": "both",
+    "multiple_add_data": false,
+    "add_data": [
+      {
+        "type": "select_box_enum",
+        "param_name": "action",
+        "enum_options": [
+          {
+            "option": "end_call",
+            "readable_name": "Положить трубку"
+          },
+          {
+            "option": "call_operator",
+            "readable_name": "Перевод на оператора"
+          }
+        ],
+        "readable_name": "Действие"
+      },
+      {
+        "type": "dict",
+        "param_name": "meta",
+        "readable_name": "Мета-данные"
+      }
+    ],
+    "options": []
+  },
+  {
+    "id": 7,
+    "name": "Отправить HTTP-запрос",
+    "table_name": "http_blocks",
+    "scenario_type": "both",
+    "multiple_add_data": false,
+    "add_data": [
+      {
+        "type": "select_box_param",
+        "param_var": "parameters_id",
+        "param_name": "parameters_id",
+        "readable_name": "HTTP-запрос"
+      }
+    ],
+    "options": []
+  },
+  {
+    "id": 8,
+    "name": "Воспроизвести аудио",
+    "table_name": "play_blocks",
+    "scenario_type": "both",
+    "multiple_add_data": true,
+    "add_data": [
+      {
+        "type": "text",
+        "param_name": "text",
+        "readable_name": "Текст"
+      },
+      {
+        "type": "select_box_param",
+        "param_var": "audio_file_id",
+        "param_name": "audio_file_id",
+        "readable_name": "Аудио"
+      }
+    ],
+    "options": []
+  },
+  {
+    "id": 9,
+    "name": "Пройти по случайной ветке",
+    "table_name": "random_choice_blocks",
+    "scenario_type": "both",
+    "multiple_add_data": false,
+    "add_data": [
+      {
+        "type": "number",
+        "param_name": "options_count",
+        "readable_name": "Количество вариантов"
+      }
+    ],
+    "options": []
+  },
+  {
+    "id": 10,
+    "name": "Изменить переменную",
+    "table_name": "set_var_blocks",
+    "scenario_type": "both",
+    "multiple_add_data": true,
+    "add_data": [
+      {
+        "type": "select_box_param",
+        "param_var": "variables",
+        "param_name": "var_id",
+        "readable_name": "Переменная"
+      },
+      {
+        "type": "text",
+        "param_name": "value",
+        "readable_name": "Значение"
+      }
+    ],
+    "options": []
+  },
+  {
+    "id": 11,
+    "name": "Обработать ответ",
+    "table_name": "intent_blocks",
+    "scenario_type": "both",
+    "multiple_add_data": false,
+    "add_data": [
+      {
+        "type": "bool",
+        "param_name": "use_counter",
+        "readable_name": "Ограничить максимальное количество повторов"
+      },
+      {
+        "type": "number",
+        "param_name": "counter",
+        "readable_name": "Количество повторов"
+      }
+    ],
+    "options": [
+      {
+        "type": "text",
+        "param_name": "name",
+        "readable_name": "Название"
+      },
+      {
+        "type": "select_box_param",
+        "param_var": "intent_id",
+        "param_name": "intent_id",
+        "readable_name": "Интент"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Пустой блок",
+    "table_name": "",
+    "scenario_type": "both",
+    "multiple_add_data": false,
+    "add_data": [],
+    "options": []
+  },
+  {
+    "id": 13,
+    "name": "Ждать ответ абонента",
+    "table_name": "hold_blocks",
+    "scenario_type": "both",
+    "multiple_add_data": false,
+    "add_data": [],
+    "options": []
+  },
+  {
+    "id": 14,
+    "name": "Перенаправить и вернуться",
+    "table_name": "redirect_blocks",
+    "scenario_type": "both",
+    "multiple_add_data": false,
+    "add_data": [],
+    "options": []
+  },
+  {
+    "id": 15,
+    "name": "Отправить сообщение",
+    "table_name": "chat_blocks",
+    "scenario_type": "chat",
+    "multiple_add_data": false,
+    "add_data": [],
+    "options": []
+  },
+  {
+    "id": 17,
+    "name": "Завершить и переадресовать",
+    "table_name": "redirect_call_blocks",
+    "scenario_type": "call",
+    "multiple_add_data": false,
+    "add_data": [],
+    "options": []
+  }
+]

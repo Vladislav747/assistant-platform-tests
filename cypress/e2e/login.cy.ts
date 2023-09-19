@@ -1,5 +1,3 @@
-import {selectByTestId} from "../helpers/selectByTestId";
-
 describe('Admin User Authentication Tests', () => {
     const assistant_url = 'http://localhost:3000';
     const admin_user_password = {
