@@ -1,6 +1,7 @@
 describe("Scenario Tests", () => {
     beforeEach(() => {
         cy.login();
+        cy.wait(2000);
         cy.intercept(
             "GET",
             "**/projects/1/scenarios_starts?start_block_type=start",
@@ -29,5 +30,16 @@ describe("Scenario Tests", () => {
         cy.contains("01.07.2023 00:00");
         cy.contains("30.07.2023 23:59");
         cy.getByTestId("listbox-button").contains("Выберите обзвон");
+    });
+
+    it("Данные конверсии выводятся в нужных полях", () => {
+        cy.visit("total-analytics");
+        cy.visit(
+            "total-analytics?projectId=1&scenario_id=641&date_start=1688151600000&date_end=1690743599000"
+        );
+
+        cy.get('.MuiCardContent-root > .MuiTypography-root').contains('Общая конверсия').closest('div').contains("0%")
+        cy.get('.MuiCardContent-root > .MuiTypography-root').contains('Количество сбросов').closest('div').contains("5")
+        cy.get('.MuiCardContent-root > .MuiTypography-root').contains('Среднее время диалога').closest('div').contains("6 сек")
     });
 });
